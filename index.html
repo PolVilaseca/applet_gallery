@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulathon 1.0</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background: #f8f9fa;
+      color: #222;
+      margin: 0;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+
+    .applet-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.2rem;
+      padding: 0 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .applet-button {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background: #ffffff;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: transform 0.1s ease-in-out, box-shadow 0.2s;
+    }
+
+    .applet-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .applet-icon {
+      width: 64px;
+      height: 64px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 1rem;
+      flex-shrink: 0;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1>Simulathon 1.0</h1>
+  <p>Welcome to the gallery of small, playful physics experiments. Click any applet to explore.</p>
+
+  <div class="applet-grid">
+    <a class="applet-button" href="https://polvilaseca.github.io/voronoi_cells/">
+      <img class="applet-icon" src="icons/voronoi.png" alt="Voronoi Cells">
+      Voronoi Cells
+    </a>
+    <a class="applet-button" href="https://polvilaseca.github.io/Random_Walk_applet/">
+      <img class="applet-icon" src="icons/random_walk.png" alt="Random Walk">
+      Random Walk
+    </a>
+    <a class="applet-button" href="https://polvilaseca.github.io/ShiFuMi/">
+      <img class="applet-icon" src="icons/shifumi.png" alt="Shi Fu Mi">
+      Shi Fu Mi
+    </a>
+  </div>
+
+  <footer>
+    Created by Pol — Made with JavaScript, curiosity, and a sprinkle of fun.
+  </footer>
+</body>
+</html>
